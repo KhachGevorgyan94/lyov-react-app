@@ -1,1 +1,0 @@
-# lyov-react-app

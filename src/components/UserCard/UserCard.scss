@@ -1,0 +1,45 @@
+@import "src/assets/styles/varoables";
+
+.user-card {
+  background-color: $white;
+  box-shadow: 0 2px 0px 5px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  width: 100%;
+
+  h3 {
+    font-size: 46px;
+
+    @media(max-width: 1200px) {
+      font-size: 24px;
+    }
+    @media(max-width: 991px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+
+  }
+
+  &:hover {
+
+    h3 {
+
+    }
+  }
+}
+
+//.user-card h3{
+//
+//}
+//
+//.user-card p{
+//
+//}
+//.user-card:hover{
+//
+//}
+//
+//.user-card:hover h3{
+//
+//}
