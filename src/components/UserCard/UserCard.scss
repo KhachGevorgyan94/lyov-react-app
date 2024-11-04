@@ -27,6 +27,14 @@
 
     }
   }
+
+
+  &.dark {
+    background-color: $black;
+    h3, p{
+      color: $white;
+    }
+  }
 }
 
 //.user-card h3{

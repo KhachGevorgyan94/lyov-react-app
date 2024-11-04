@@ -1,18 +1,24 @@
 import {UserCard} from "./components/UserCard/UserCard";
+import {Header} from "./components/Header/Header";
 
 export const App = () => {
-    return <div>
-        <header>
-            <h1>header</h1>
-        </header>
-       <div className={'card-list'}>
-           <UserCard title={'title 1'} num={30}/>
-           <UserCard title={'title 2'} num={60}/>
-       </div>
+    return <>
+        <Header/>
+        <div className={'card-list'}>
+            <UserCard title={'title 1'} num={30} isDark/>
+            <UserCard title={'title 2'} num={60}/>
+            <UserCard title={'title 2'} num={60} color={'rgb(123,245,60)'}/>
+            <UserCard address={{city: 'Tashkent', zipCode: '100000'}}/>
+            <UserCard>
+                <div>
+                    <button>Click me</button>
+                </div>
+            </UserCard>
+        </div>
         <footer>
             <h1>footer</h1>
         </footer>
-    </div>
+    </>
 }
 
 export default App
